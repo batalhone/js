@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the square root of different numbers.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var a = Math.sqrt(4);
+  var b = Math.sqrt(1);
+  var c = Math.sqrt(9);
+  var d = Math.sqrt(64);
+  var e = Math.sqrt(-9);
+
+  var x = a + "<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
