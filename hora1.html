@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<p>Clique no botao para mostrar a mensagem:</p>
+
+<button onclick="minhafuncao()">Clicar aqui</button>
+
+<p id="teste"></p>
+
+<script>
+function minhafuncao() {
+  var hora = new Date().getHours(); 
+  var mensagem;
+  if (hora < 18) {
+    mensagem = "Bom dia";
+  } else {
+    mensagem = "Boa tarde";
+  }
+  document.getElementById("teste").innerHTML = mensagem;
+}
+</script>
+
+</body>
+</html>
