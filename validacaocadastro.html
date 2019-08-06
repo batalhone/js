@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<h2>JavaScript para validacao de dados</h2>
+
+<p>Por favor digite um numero entre 1 e 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="minhafuncao()">Submit</button>
+
+<p id="teste"></p>
+
+<script>
+function minhafuncao() {
+  var x, text;
+
+  // pegar o numero id="numb"
+  x = document.getElementById("numb").value;
+
+  // se x nao for um numero esperadp
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Entrada inválida";
+  } else {
+    text = "Entrada OK";
+  }
+  document.getElementById("teste").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
