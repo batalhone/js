@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Clique no botao.</p>
+
+<button onclick="funcao()">mostraMes</button>
+
+<p id="mostraMes"></p>
+
+<script>
+function funcao() {
+  let mes = new Array();
+  mes[0] = "Janeiro";
+  mes[1] = "Fevereiro";
+  mes[2] = "Marco";
+  mes[3] = "Abril";
+  mes[4] = "Maio";
+  mes[5] = "Junho";
+  mes[6] = "Julho";
+  mes[7] = "Agosto";
+  mes[8] = "Setembeo";
+  mes[9] = "Outubro";
+  mes[10] = "Novembro";
+  mes[11] = "Dezembro";
+
+  var d = new Date();
+  var n = mes[d.getMonth()];
+  document.getElementById("mostraMes").innerHTML = n;
+}
+</script>
+
+</body>
+</html>
